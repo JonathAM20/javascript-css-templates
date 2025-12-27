@@ -29,6 +29,15 @@ const translations = {
         en: 'CV, Interview & Job search support'
     },
 
+    'individual-career-btn': {
+        fr: 'CARRIÈRE INDIVIDUELLE',
+        en: 'INDIVIDUAL CAREER'
+    },
+    'workshop-career-btn': {
+        fr: 'CARRIÈRE D\'ATELIER',
+        en: 'WORKSHOP CAREER'
+    },
+
     'pricing-plan-title': {
         fr: 'Projets de carrière individuels',
         en: 'Individual Career Projects'
