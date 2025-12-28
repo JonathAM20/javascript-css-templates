@@ -11,7 +11,7 @@
 
     background-size: cover;
     background-position: center;
-    height: 350px;
+    height: 450px;
 
     & .hero-action {
         display: flex;
@@ -89,7 +89,7 @@
 @media (min-width: 768px) {
 
     .hero-content {
-        height: 440px;
+        height: 550px;
 
         & .hero-action {
 
