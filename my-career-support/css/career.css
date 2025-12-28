@@ -1,0 +1,45 @@
+.pricing-plan-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    & .pricing-plan-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #F8F9FA;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #eee;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 40px;
+
+        & .pricing-plan-card-icon {
+            background-color: #3f7652;
+            padding: 20px;
+            font-size: xx-large;
+            color: white;
+            border-radius: 50px;
+        }
+
+        & .pricing-plan-card-premium {
+            display: flex;
+            gap: 20px;
+        }
+    }
+}
+
+.pricing-plan-features {
+
+    & h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .pricing-plan-list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}

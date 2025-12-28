@@ -1,0 +1,116 @@
+.hero-content {
+    display: flex;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(to top right,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(150, 150, 150, 0.7) 50%,
+            rgba(255, 255, 255, 0.9) 100%),
+        url('../images/hero-background-2.png');
+
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+
+    & .hero-action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+
+        & .hero {
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+
+            & .hero-top {
+
+                & h1 {
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 700;
+                    font-size: 48px;
+                    margin: 0;
+                }
+
+                & div p {
+                    font-size: 12px;
+                }
+
+                & p {
+                    font-size: 12px;
+                }
+
+                & svg {
+                    width: 100px;
+                }
+            }
+
+            & .hero-bottom {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px
+            }
+        }
+    }
+}
+
+@media (min-width: 460px) {
+
+    .hero-content {
+
+        & .hero-action {
+
+            & .hero {
+                height: 70%;
+            }
+        }
+    }
+}
+
+@media (min-width: 632px) {
+
+    .hero-content {
+
+        & .hero-action {
+
+            & .hero {
+                height: 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .hero-content {
+        height: 440px;
+
+        & .hero-action {
+
+            & .hero {
+                height: 40%;
+
+                & .hero-top {
+
+                    & svg {
+                        width: 180px;
+                    }
+
+                    & div p {
+                        font-size: 18px;
+                    }
+
+                    & p {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & .contact-input {
+        border-radius: 10px;
+        border: 1px solid gray;
+        padding: 10px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    & #message {
+        font-family: 'Inter', sans-serif;
+        resize: none;
+        height: 100px;
+    }
+}
+
+.contacts-image {
+    min-height: 300px;
+    opacity: .8;
+    background-image: linear-gradient(to top,
+            rgba(206, 255, 28, 0.6) 0%,
+            rgba(255, 255, 255, 0.8) 100%),
+        url('../images/contact.jpg');
+    background-position: center;
+    clip-path: polygon(0% 2%, 10% 8%, 20% 5%, 30% 12%, 40% 15%, 50% 10%, 60% 6%, 70% 3%, 85% 7%, 100% 0%,
+            100% 50%,
+            100% 92%, 90% 95%, 80% 90%, 70% 98%, 60% 94%, 50% 91%, 40% 88%, 30% 95%, 15% 92%, 0% 100%);
+}
