@@ -7,12 +7,16 @@
     <title>HTML Templates</title>
 
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="top-bar">
         <img src="images/logo.png" alt="">
-        <p>Improved Single Pages</p>
+        <a href="index.html" class="btn-outline" data-i18n="workshop-career-btn">
+            <i class="fa-solid fa-arrow-left"></i> BACK</a>
         <!-- <div class="menu-bar">
             <div class="menu">
                 <p>Upgraded Pages</p>
@@ -25,31 +29,31 @@
         </div> -->
     </div>
     <div class="main-container">
+        <h3>HTML Page Improvement</h3>
         <div class="template-window">
             <div id="template-view" class="template-view">
                 <div class="before-after-view">
                     <div class="before-view-header">
-                        <h3>Before</h3>
+                        <h6>Before</h6>
                     </div>
                     <img src="images/before.png" alt="">
                 </div>
                 <div class="before-after-view">
                     <div class="after-view-header">
-                        <h3>After</h3>
+                        <h6>After</h6>
                     </div>
                     <a href="my-career-support/index.html">
                         <img src="images/after.png" alt="">
                     </a>
                 </div>
+
+                <button id="after-view-action" class="btn-outline after-view-action">AFTER</button>
             </div>
         </div>
     </div>
     <footer class="footer">
         <h6>© 2025 HTML JS / CSS Templates</h6>
     </footer>
-
-    <button id="after-view-action" class="after-view-action">AFTER</button>
-
     <script src="script.js"></script>
 </body>
 
