@@ -1,3 +1,25 @@
+.contact-background {
+    margin-top: -75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: linear-gradient(to top,
+            rgba(206, 255, 28, 0.6) 0%,
+            rgba(255, 255, 255, 0.8) 100%),
+        url('../images/contact.jpg');
+    clip-path: polygon(0% 2%, 10% 8%, 20% 5%, 30% 12%, 40% 15%, 50% 10%, 60% 6%, 70% 3%, 85% 7%, 100% 0%,
+            100% 50%,
+            100% 92%, 90% 95%, 80% 90%, 70% 98%, 60% 94%, 50% 91%, 40% 88%, 30% 95%, 15% 92%, 0% 100%);
+}
+
+.contact-content {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -28,4 +50,11 @@
     clip-path: polygon(0% 2%, 10% 8%, 20% 5%, 30% 12%, 40% 15%, 50% 10%, 60% 6%, 70% 3%, 85% 7%, 100% 0%,
             100% 50%,
             100% 92%, 90% 95%, 80% 90%, 70% 98%, 60% 94%, 50% 91%, 40% 88%, 30% 95%, 15% 92%, 0% 100%);
+}
+
+@media (min-width: 768px) {
+
+    .contact-content {
+        width: 50%;
+    }
 }

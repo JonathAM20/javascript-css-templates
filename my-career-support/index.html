@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/career.css">
 	<link rel="stylesheet" href="css/testimonials.css">
 	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/observer.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -424,25 +425,55 @@
 				</div>
 			</div>
 		</div>
-		<div class="default-white-content" id="contact">
-			<div class="content">
-				<div class="grid-content">
-					<div>
-						<h1><span class="secondary-color">Contacts</span></h1>
-						<form class="contact-form">
-							<input class="contact-input" type="name" name="name" id="name" placeholder="Name">
-							<input class="contact-input" type="email" name="email" id="email" placeholder="E-mail">
-							<textarea class="contact-input" name="message" id="message" cols="30" rows="10"
-								placeholder="Message"></textarea>
-							<button type="submit" class="btn-primary">SEND</button>
-						</form>
-					</div>
-					<div class="contacts-image box observe"></div>
-				</div>
+		<div class="contact-background" id="contact">
+			<div class="contact-content">
+				<h1><span class="secondary-color">Contact</span></h1>
+				<form class="contact-form">
+					<input class="contact-input" type="name" name="name" id="name" placeholder="Name">
+					<input class="contact-input" type="email" name="email" id="email" placeholder="E-mail">
+					<textarea class="contact-input" name="message" id="message" cols="30" rows="10"
+						placeholder="Message"></textarea>
+					<button type="submit" class="btn-primary">SEND</button>
+				</form>
 			</div>
 		</div>
-		<div class="footer-content">
-			<p>©2026 by My Career Support.ie</p>
+		<div class="default-white-content" id="footer">
+			<div class="content">
+				<div class="grid-content">
+					<div class="copyright">
+						<img src="images/my-career-suport-white.png">
+						<p>©2026 by My Career Support.ie</p>
+					</div>
+					<div class="links-content">
+						<h3>Menu</h3>
+						<ul class="links">
+							<li>
+								<span>
+									<a href="#about" data-i18n="about-menu-label" id="menu-item-about">About</a>
+								</span>
+							</li>
+							<li><span><a href="#career" data-i18n="career-menu-label"
+										id="menu-item-career">Career</a></span>
+							</li>
+							<li><span><a href="#workshop" data-i18n="workshop-menu-label"
+										id="menu-item-workshop">Workshop</a></span></li>
+							<li><span><a href="#testimonial" data-i18n="testimonial-menu-label"
+										id="menu-item-testimonial">Testimonial</a></span></li>
+							<li><span><a href="#contact" id="menu-item-contact">Contact</a></span></li>
+						</ul>
+					</div>
+					<div class="links-content">
+						<h3>Service</h3>
+						<ul class="links">
+							<li><span><a data-i18n="terms-of-use-menu-label" id="menu-item-terms-of-use">Terms of
+										Use</a></span>
+							</li>
+							<li><span><a data-i18n="policy-privacy-menu-label" id="menu-item-privacy-policy">Policy
+										Privacy</a></span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 

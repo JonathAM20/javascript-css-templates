@@ -8,7 +8,6 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
-    background-color: #BEBABA;
 }
 
 .primary-color {
@@ -57,8 +56,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .default-gray-content {
@@ -66,8 +65,8 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #F8F9FA;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .content {
@@ -78,11 +77,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-}
-
-.footer-content {
-    background-color: #BEBABA;
-    text-align: center;
 }
 
 @media (min-width: 768px) {
