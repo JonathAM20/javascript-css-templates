@@ -1,0 +1,40 @@
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    & p {
+        color: #606F82;
+    }
+}
+
+.testimonial-card {
+    gap: 20px;
+
+    & .column-gap p {
+        font-style: italic;
+    }
+
+    & span {
+        height: .5px;
+        width: 100%;
+        background-color: #CCC;
+    }
+
+    & .testimonial-owner {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        & h3 {
+            margin: 0;
+        }
+    }
+}
+
+.star-card-icon {
+    display: flex;
+    color: #0077FF;
+    gap: 5px;
+}

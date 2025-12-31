@@ -6,160 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Templates</title>
 
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/subscription.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/benefits.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header class="menu-header">
+    <header class="container white-background">
+        <div class="content">
+            <div class="top-bar">
+                <h3>Remint</h3>
 
-        <nav class="nav-bar">
+                <ul id="menu-items" class="menu-items">
+                    <li class="menu-item">
+                        <h3>Remint</h3>
+                    </li>
+                    <li class="menu-item">
+                        <a>Features</a>
+                    </li>
+                    <li class="menu-item">
+                        <a>Benefits</a>
+                    </li>
+                    <li class="menu-item">
+                        <a>Testimonials</a>
+                    </li>
+                    <li class="menu-item">
+                        <a>Stats</a>
+                    </li>
+                </ul>
 
-            <a [href]="'/home'">
-                <h1>Remint</h1>
-            </a>
-
-            <ul class="menu-list" [class.active]="isMenuOpen">
-                <li class="logo-mobile-item">
-                    <a [href]="'/home'">
-                        <h1>Remint</h1>
-                    </a>
-                </li>
-
-                <li class="menu-item">
-                    <a>Features</a>
-                </li>
-                <li class="menu-item">
-                    <a>Benefits</a>
-                </li>
-                <li class="menu-item">
-                    <a>Testimonials</a>
-                </li>
-                <li class="menu-item">
-                    <a>Stats</a>
-                </li>
-            </ul>
-
-            <div class="button-group">
-                <button class="custom-button">Get Free Audit</button>
-                <button id="hamburger-btn" class="hamburger-btn" aria-label="Open Menu">
-                    <span [class.open]="isMenuOpen"></span>
-                    <span [class.open]="isMenuOpen"></span>
-                    <span [class.open]="isMenuOpen"></span>
-                </button>
-            </div>
-
-        </nav>
-
-    </header>
-
-    <div class="main-container">
-        <div class="container">
-            <div class="welcome-message">
-                <div class="message">
-                    <div>
-                        <button class="trend-button">
-                            <i class="fa-solid fa-arrow-trend-up"></i>
-                            <span>Trusted by 1000+ Amazon Sellers</span>
-                        </button>
-                    </div>
-                    <h1>Boost Your Amazon Business <span style="color: #0077FF;">Recovery</span></h1>
-                    <p>Helping sellers recover up to <strong>10x more</strong> value from their overstock and unsold
-                        inventory
-                        compared to Amazon
-                        liquidation.</p>
-                    <div class="row">
-                        <button class="offer-button">
-                            <span>Your Free Audit Today</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                        <button class="learn-button">Learn How It Works</button>
-                    </div>
-                    <div class="row-index">
-                        <div class="column-index">
-                            <h2>10x</h2>
-                            <p style="font-size: xx-small;">Higher Recovery</p>
-                        </div>
-                        <div class="column-index">
-                            <h2>48hrs</h2>
-                            <p style="font-size: xx-small;">Fast Payouts</p>
-                        </div>
-                        <div class="column-index" id="last-child">
-                            <h2>100%</h2>
-                            <p style="font-size: xx-small;">Secure Process</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="image2">
-                    <div class="image">
-                        <img src="/welcome.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="service-container">
-            <div class="services">
-                <h1>Everything You Need to <span style="color: #0077FF;">Maximize Recovery</span></h1>
-                <p>A complete solution designed specifically for Amazon sellers looking to recover maximum value</p>
-                <div class="serice-cards">
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-bolt"></i>
-                        </div>
-                        <h2>Fast Payouts</h2>
-                        <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-user-group"></i>
-                        </div>
-                        <h2>Fast Payouts</h2>
-                        <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-shield"></i>
-                        </div>
-                        <h2>Fast Payouts</h2>
-                        <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon">
-                            <i class="fa-solid fa-file-circle-check"></i>
-                        </div>
-                        <h2>Fast Payouts</h2>
-                        <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="subscription-container">
-            <div class="subscription">
-                <h1>Get Your Free Inventory Audit Today</h1>
-                <p style="width: 70%;">Discover how much more value you could recover from your Amazon inventory. No
-                    commitment required.</p>
-                <div class="subscription-form">
-                    <input type="text" placeholder="Enter your email address">
-                    <button class="offer-button">
-                        <span>Get Free Audit</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+                <div class="button-group">
+                    <button class="custom-button">Get Free Audit</button>
+                    <button id="hamburger-btn" class="hamburger-btn" aria-label="Open Menu">
+                        <!-- <span [class.open]="isMenuOpen"></span> -->
+                        <span id="hamburger-span-1"></span>
+                        <span id="hamburger-span-2"></span>
+                        <span id="hamburger-span-3"></span>
                     </button>
                 </div>
-                <p class="privacy-note">We respect your privacy. Your email address will never be shared.</p>
             </div>
         </div>
-        <div class="service-container">
-            <div class="services">
-                <h1>Trusted by <span style="color: #0077FF;">Thousands of Sellers</span></h1>
+    </header>
+    <div class="hero-container">
+        <div class="content">
+            <div class="hero-content">
+                <div>
+                    <button class="trend-button">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span>Trusted by 1000+ Amazon Sellers</span>
+                    </button>
+                </div>
+                <div class="main-message">
+                    <h1>Boost Your Amazon Business <span class="custom-text">Recovery</span></h1>
+                    <p>Helping sellers recover up to <strong>10x more</strong> value from their overstock and unsold
+                        inventory compared to Amazon liquidation.</p>
+                </div>
+                <div class="row-gap">
+                    <button class="row-gap custom-button hero-custom-font">
+                        <span>Your Free Audit Today</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button class="learn-button hero-custom-font">Learn How It Works</button>
+                </div>
+                <div class="row-index">
+                    <div class="column-index">
+                        <h2>10x</h2>
+                        <p style="font-size: xx-small;">Higher Recovery</p>
+                    </div>
+                    <div class="column-index">
+                        <h2>48hrs</h2>
+                        <p style="font-size: xx-small;">Fast Payouts</p>
+                    </div>
+                    <div class="column-index" id="last-child">
+                        <h2>100%</h2>
+                        <p style="font-size: xx-small;">Secure Process</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container gray-background padding-top-bottom-100">
+        <div class="content">
+            <div class="features-content" id="features">
+                <h1>Everything You Need to <span class="custom-text"">Maximize Recovery</span></h1>
+                <p>A complete solution designed specifically for Amazon sellers looking to recover maximum value</p>
+                <div class=" white-card-list">
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <h2>Fast Payouts</h2>
+                            <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <h2>Fast Payouts</h2>
+                            <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-shield"></i>
+                            </div>
+                            <h2>Fast Payouts</h2>
+                            <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">
+                                <i class="fa-solid fa-file-circle-check"></i>
+                            </div>
+                            <h2>Fast Payouts</h2>
+                            <p>Get paid within 48 hours of inventory acceptance. No waiting months for your money.</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container blue-background padding-top-bottom-50">
+        <div class="content">
+            <div class="subscription" id="subscription">
+                <div class="subscription-content">
+                    <h1>Get Your Free Inventory Audit Today</h1>
+                    <p>Discover how much more value you could recover from your Amazon inventory. No
+                        commitment required.</p>
+                    <div class="subscription-form">
+                        <input type="text" placeholder="Enter your email address">
+                        <button class="row-gap custom-button">
+                            <span>Get Free Audit</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <p>We respect your privacy. Your email address will never be shared.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container gray-background padding-top-bottom-100">
+        <div class="content">
+            <div class="testimonials-content" id="testimonials">
+                <h1>Trusted by <span class="custom-text">Thousands of Sellers</span></h1>
                 <p>See what our customers say about their experience with Remint</p>
-                <div class="serice-cards">
-                    <div class="card">
-                        <div
-                            style="display: flex; gap: 10px; flex-direction: column; border-bottom: 1px solid #CCC; padding-bottom: 10px;">
+                <div class="white-card-list">
+                    <div class="card testimonial-card">
+                        <div class="column-gap">
                             <div class="star-card-icon">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -167,18 +166,18 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <p style="font-style: italic;">"Remint helped us recover $250K from inventory we thought was
+                            <p>"Remint helped us recover $250K from inventory we thought was
                                 worthless. The process was smooth and professional."</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 2px; margin-top: 10px;">
-                            <h2 style="margin: 0;">Sarah Johnson</h2>
-                            <p style="margin: 0;">E-commerce Manager</p>
-                            <p style="margin: 0;">TechGadgets Inc</p>
+                        <span></span>
+                        <div class="testimonial-owner">
+                            <h3>Sarah Johnson</h3>
+                            <p>E-commerce Manager</p>
+                            <p>TechGadgets Inc</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div
-                            style="display: flex; gap: 10px; flex-direction: column; border-bottom: 1px solid #CCC; padding-bottom: 10px;">
+                    <div class="card testimonial-card">
+                        <div class="column-gap">
                             <div class="star-card-icon">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -186,18 +185,18 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <p style="font-style: italic;">"After using Amazon liquidation for years, Remint showed us we
-                                were leaving 80% of our money on the table. Game changer!"</p>
+                            <p>"After using Amazon liquidation for years, Remint showed us
+                                we were leaving 80% of our money on the table. Game changer!"</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 2px; margin-top: 10px;">
-                            <h2 style="margin: 0;">Michael Chen</h2>
-                            <p style="margin: 0;">Amazon Seller</p>
-                            <p style="margin: 0;">Home Essentials</p>
+                        <span></span>
+                        <div class="testimonial-owner">
+                            <h3>Michael Chen</h3>
+                            <p>Amazon Seller</p>
+                            <p>Home Essentials</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <div
-                            style="display: flex; gap: 10px; flex-direction: column; border-bottom: 1px solid #CCC; padding-bottom: 10px;">
+                    <div class="card testimonial-card">
+                        <div class="column-gap">
                             <div class="star-card-icon">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -205,185 +204,162 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             </div>
-                            <p style="font-style: italic;">"The verified buyers and transparent process gave us confidence.
-                                We recovered 12x more than Amazon's offer."</p>
+                            <p>"The verified buyers and transparent process gave us
+                                confidence. We recovered 12x more than Amazon's offer."</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 2px; margin-top: 10px;">
-                            <h2 style="margin: 0;">Emily Rodriguez</h2>
-                            <p style="margin: 0;">Operations Director</p>
-                            <p style="margin: 0;">Fashion Forward</p>
+                        <span></span>
+                        <div class="testimonial-owner">
+                            <h3>Emily Rodriguez</h3>
+                            <p>Operations Director</p>
+                            <p>Fashion Forward</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="compare-container">
-            <div class="compare">
-                <h1 style="margin: 0;">Why Choose Remint Over <span style="color: #0077FF;">Amazon Liquidation</span></h1>
-                <p style="color: #AAA; margin: 0; margin-bottom: 30px;">See the clear difference in value recovery and
-                    seller experience</p>
-                <div class="compare-table-header">
-                    <div class="default-efect"></div>
-                    <div class="remint-efect" style="justify-content: center; font-size: small;">
-                        <h2>Remint</h2>
-                    </div>
-                    <div class="amazon-efect" style="justify-content: center; color: #62666F; font-size: small;">
-                        <h2>Amazon</h2>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Average Recovery Rate</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
+    </div>
+    <div class="container white-background padding-top-bottom-100">
+        <div class="content">
+            <div class="benefits" id="benefits">
+                <div class="benefits-content">
+                    <h1>Why Choose Remint Over <span class="custom-text">Amazon Liquidation</span></h1>
+                    <p style="text-align: center;">See the clear difference in value recovery and seller experience</p>
+                    <div class="compare-table">
+                        <div class="compare-table-header">
+                            <div class="default-efect"></div>
+                            <div class="remint-efect justify-content-center">
+                                <h3>Remint</h3>
+                            </div>
+                            <div class="amazon-efect justify-content-center">
+                                <h3>Amazon</h3>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p style="margin: 0;">85-95% of value</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style=" width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
+                        <div class="compare-table-row">
+                            <div class="default-efect">
+                                <p>Average Recovery Rate</p>
+                            </div>
+                            <div class="remint-efect">
+                                <div class="remint-row-efect">
+                                    <h3>Remint</h3>
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                                <p>85-95% of value</p>
+                            </div>
+                            <div class="amazon-efect">
+                                <div class="amazon-row-efect">
+                                    <h3>Amazon</h3>
+                                </div>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>10-15% of value</p>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>10-15% of value</p>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Payout Speed</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
+                        <div class="compare-table-row">
+                            <div class="default-efect">
+                                <p>Payout Speed</p>
+                            </div>
+                            <div class="remint-efect">
+                                <div class="remint-row-efect">
+                                    <h3>Remint</h3>
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                                <p style="margin: 0;">48 hours</p>
+                            </div>
+                            <div class="amazon-efect">
+                                <div class="amazon-row-efect">
+                                    <h3>Amazon</h3>
+                                </div>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>3-6 months</p>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p style="margin: 0;">48 hours</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style="width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
+                        <div class="compare-table-row">
+                            <div class="default-efect">
+                                <p>Buyer Verification</p>
+                            </div>
+                            <div class="remint-efect">
+                                <div class="remint-row-efect">
+                                    <h3>Remint</h3>
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                                <p style="margin: 0;">Fully vetted buyers</p>
+                            </div>
+                            <div class="amazon-efect">
+                                <div class="amazon-row-efect">
+                                    <h3>Amazon</h3>
+                                </div>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>Anonymous liquidators</p>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>3-6 months</p>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Buyer Verification</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
+                        <div class="compare-table-row">
+                            <div class="default-efect">
+                                <p>Price Transparency</p>
+                            </div>
+                            <div class="remint-efect">
+                                <div class="remint-row-efect">
+                                    <h3>Remint</h3>
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                                <p style="margin: 0;">Full visibility</p>
+                            </div>
+                            <div class="amazon-efect">
+                                <div class="amazon-row-efect">
+                                    <h3>Amazon</h3>
+                                </div>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>Hidden pricing</p>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p style="margin: 0;">Fully vetted buyers</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style="width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
+                        <div class="compare-table-row">
+                            <div class="default-efect">
+                                <p>Contract Protection</p>
+                            </div>
+                            <div class="remint-efect">
+                                <div class="remint-row-efect">
+                                    <h3>Remint</h3>
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                                <p style="margin: 0;">Legally binding</p>
+                            </div>
+                            <div class="amazon-efect">
+                                <div class="amazon-row-efect">
+                                    <h3>Amazon</h3>
+                                </div>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>Minimal protection</p>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>Anonymous liquidators</p>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Price Transparency</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
+                        <div class="compare-table-row">
+                            <div class="default-efect">
+                                <p>Customer Support</p>
+                            </div>
+                            <div class="remint-efect">
+                                <div class="remint-row-efect">
+                                    <h3>Remint</h3>
+                                </div>
+                                <i class="fa-solid fa-check"></i>
+                                <p>Dedicated account manager</p>
+                            </div>
+                            <div class="amazon-efect">
+                                <div class="amazon-row-efect">
+                                    <h3>Amazon</h3>
+                                </div>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>Limited support</p>
+                            </div>
                         </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p style="margin: 0;">Full visibility</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style="width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
-                        </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>Hidden pricing</p>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Contract Protection</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
-                        </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p style="margin: 0;">Legally binding</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style="width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
-                        </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>Minimal protection</p>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Customer Support</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
-                        </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p>Dedicated account manager</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style="width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
-                        </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>Limited support</p>
-                    </div>
-                </div>
-                <div class="compare-table">
-                    <div class="default-efect">
-                        <p>Payout Speed</p>
-                    </div>
-                    <div class="remint-efect">
-                        <div class="remint-row-efect"
-                            style="width: 100px; background-color: #0077FF; color: white; margin: 0; padding: 10px;">
-                            <h2>Remint</h2>
-                        </div>
-                        <i class="fa-solid fa-check" style="color: #0077FF; margin-left: 10px;"></i>
-                        <p style="margin: 0;">48 hours</p>
-                    </div>
-                    <div class="amazon-efect">
-                        <div class="amazon-row-efect"
-                            style="width: 100px; background-color: #CCC; color: white; margin: 0; padding: 10px;">
-                            <h2>Amazon</h2>
-                        </div>
-                        <i class="fa-solid fa-xmark" style="color: red; margin-left: 10px;"></i>
-                        <p>3-6 months</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="numbers-container">
-            <div class="numbers">
-                <h1 style="margin: 0;">Our Track Record Speaks for Itself</h1>
-                <p style="color: #C9E4FF;">Join thousands of Amazon sellers who've transformed their inventory recovery</p>
+    </div>
+    <div class="container primary-blue-background padding-top-bottom-50">
+        <div class="content">
+            <div class="stats" id="stats">
+                <h1>Our Track Record Speaks for Itself</h1>
+                <p>Join thousands of Amazon sellers who've transformed their inventory
+                    recovery
+                </p>
                 <div class="numbers-card-list">
                     <div class="number-card">
                         <h2>95%</h2>
@@ -405,40 +381,43 @@
             </div>
         </div>
     </div>
-
-    <div class="footer-container">
-        <div class="footer">
-            <div class="links">
-                <div class="column">
-                    <h1 id="logo">Remint</h1>
-                    <p>Helping Amazon sellers recover maximum value from their inventory.</p>
+    <div class="container white-background">
+        <div class="content">
+            <div class="footer-content">
+                <div class="links">
+                    <div class="column">
+                        <h3 class="custom-text">Remint</h3>
+                        <p>Helping Amazon sellers recover maximum value from their inventory.</p>
+                    </div>
+                    <div class="column">
+                        <h4>Product</h4>
+                        <p>Features</p>
+                        <p>Benefits</p>
+                        <p>Stats</p>
+                        <p>Pricing</p>
+                    </div>
+                    <div class="column">
+                        <h4>Company</h4>
+                        <p>About Us</p>
+                        <p>Testimonials</p>
+                        <p>Contact</p>
+                        <p>Careers</p>
+                    </div>
+                    <div class="column">
+                        <h4>Legal</h4>
+                        <p>Privacy Policy</p>
+                        <p>Terms of Service</p>
+                        <p>Cookie Policy</p>
+                    </div>
                 </div>
-                <div class="column">
-                    <h1>Product</h1>
-                    <p>Features</p>
-                    <p>Benefits</p>
-                    <p>Stats</p>
-                    <p>Pricing</p>
+                <div class="rights">
+                    <p>© 2024 Remint. All rights reserved.</p>
                 </div>
-                <div class="column">
-                    <h1>Company</h1>
-                    <p>About Us</p>
-                    <p>Testimonials</p>
-                    <p>Contact</p>
-                    <p>Careers</p>
-                </div>
-                <div class="column">
-                    <h1>Legal</h1>
-                    <p>Privacy Policy</p>
-                    <p>Terms of Service</p>
-                    <p>Cookie Policy</p>
-                </div>
-            </div>
-            <div class="rights">
-                <p>© 2024 Remint. All rights reserved.</p>
             </div>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,138 @@
+.benefits {
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-content {
+    display: flex;
+    flex-direction: column;
+
+    & h1 {
+        text-align: center;
+    }
+}
+
+.compare-table {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.compare-table-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.compare-table-header {
+    display: none
+}
+
+.default-efect p {
+    color: #62666F;
+    font-weight: bold;
+    font-size: small;
+}
+
+.remint-efect {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+    background-color: #EDF6FF;
+    border-radius: 10px;
+    border: 2px solid #0077FF;
+    height: 40px;
+
+    & i {
+        color: #0077FF;
+        margin-left: 10px;
+    }
+
+    & p {
+        margin: 0;
+    }
+}
+
+.remint-efect p {
+    color: #62666F;
+    font-weight: bold;
+    font-size: small;
+}
+
+.remint-row-efect {
+    width: 100px;
+    background-color: #0077FF;
+    color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.amazon-efect {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    height: 40px;
+
+    & h3 {
+        color: #62666F;
+    }
+
+    & i {
+        color: red;
+        margin-left: 10px;
+    }
+}
+
+.amazon-efect p {
+    color: #62666F;
+    font-size: small;
+}
+
+.amazon-row-efect {
+    width: 100px;
+    background-color: #CCC;
+    color: white;
+    margin: 0;
+    padding: 10px;
+
+    & h3 {
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .benefits-content {
+        width: 85%;
+    }
+
+    .compare-table-row {
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    .compare-table-header {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    .remint-row-efect {
+        display: none;
+    }
+
+    .amazon-row-efect {
+        display: none;
+    }
+}
+
+@media (min-width: 1116px) {
+
+
+    .benefits-content {
+        width: 60%;
+    }
+}

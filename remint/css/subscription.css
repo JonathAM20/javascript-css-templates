@@ -1,0 +1,51 @@
+.subscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscription-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    & p {
+        width: 80%;
+        color: #606F82;
+        font-size: small;
+    }
+}
+
+.subscription-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+
+    & input {
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #CCC;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .subscription-content {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .subscription-form {
+        display: flex;
+    }
+
+    .subscription-form input {
+        width: 250px;
+    }
+
+}

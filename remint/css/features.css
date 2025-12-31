@@ -1,0 +1,17 @@
+.features-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    & p {
+        color: #607171;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .features-content {
+        align-items: center;
+    }
+
+}

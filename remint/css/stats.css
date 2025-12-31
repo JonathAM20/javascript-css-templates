@@ -1,0 +1,51 @@
+.stats {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+    & p {
+        color: #C9E4FF;
+        padding-bottom: 50px;
+    }
+}
+
+.numbers-card-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.number-card h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.number-card p {
+    color: #C9E4FF;
+    font-size: x-small;
+}
+
+@media (min-width: 768px) {
+
+    .numbers-card-list {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .number-card h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1116px) {
+
+    .number-card h2 {
+        font-size: 3.2rem;
+    }
+
+    .number-card p {
+        font-size: medium;
+    }
+}

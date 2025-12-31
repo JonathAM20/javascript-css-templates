@@ -1,17 +1,7 @@
-.footer-container {
-width: 100%;
-
+.footer-content {
     display: flex;
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.footer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    padding-top: 30px;
 }
 
 .links {
@@ -24,14 +14,6 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.column h1#logo {
-    color: #0077FF;
-}
-
-.column h1 {
-    font-size: smaller;
 }
 
 .column p {
