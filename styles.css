@@ -10,11 +10,11 @@ body {
     display: none;
 }
 
-h3,
-h6,
+h1,
+h2,
+p,
 li {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
 }
@@ -80,7 +80,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .improved-single-pages-list {
@@ -90,27 +90,36 @@ li {
     padding-top: 20px;
     padding-bottom: 20px;
     gap: 20px;
-}
 
-.improved-single-page-card {
-    height: 300px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    & a {
+        text-decoration: none;
+        color: black;
 
-    & a img {
-        width: 100%;
-        cursor: pointer;
-        transition: opacity 0.3s;
-        border: 1px solid gainsboro;
-    }
+        & .improved-single-page-card {
+            height: 400px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    & a img:hover {
-        opacity: 0.8;
+            & li {
+                text-align: left;
+            }
+        
+            & img {
+                width: 100%;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                border: 1px solid gainsboro;
+            }
+        
+            & img:hover {
+                opacity: 0.8;
+            }
+        }
     }
 }
 
@@ -153,26 +162,26 @@ li {
 .before-view-header {
     position: absolute;
     top: 0;
-    right: 45%;
+    left: 10%;
 }
 
 .after-view-header {
     position: absolute;
     top: 0;
-    right: 45%;
+    right: 10%;
 }
 
 .after-view-action {
     position: absolute;
     width: 50px;
-    top: 23px;
-    left: 40%;
+    top: 28px;
+    left: 37%;
 }
 
 #after-view-action[data-isAfter="true"] {
     width: 60px;
-    top: 23px;
-    left: 55%;
+    top: 28px;
+    left: 54%;
 }
 
 #template-view[data-isAfter="true"] {
@@ -183,6 +192,10 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    & p {
+        font-size: x-small;
+    }
 }
 
 @media (min-width: 768px) {
